@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gmk19.linked_lists2.MainActivity">
+
+    <EditText
+        android:id="@+id/inputNum"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="number"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="147dp"
+        android:layout_height="39dp"
+        android:text="What number would you like to add?"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <Button
+        android:id="@+id/front"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonPressed"
+        android:text="front"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <Button
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonPressed"
+        android:text="END"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where would you like to add it?"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="216dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="287dp">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
